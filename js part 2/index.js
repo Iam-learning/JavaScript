@@ -56,6 +56,12 @@ else{
     console.log(" Not Eligible to Vote")
 }
 
+//USE OF LET, CONST
+console.log("Using \033[3mlet\033[0m to declare variables:");
+console.log(" It has block level scope, var is used to declare global variables.");
+
+console.log("\033[3mconst\033[0m is used to declare constants which helps avoiding overriding values.");
+
 //FOR LOOP
 console.log("For Loop: ");
 
@@ -72,6 +78,51 @@ arr.forEach(function(element){
     console.log(" ",element);
 })
 
-//WHILE LOOP AND USE OF LET
-console.log("Using \033[3mlet\033[0m to declare variables:");
-console.log("It has block level scope, var is used to declare global variables.")
+
+//WHILE LOOP:
+console.log("While Loop:")
+
+let j = 0;
+while(j<arr.length){
+    console.log(" ", j);
+    j++;
+}
+
+//BREAK and CONTINUE:
+console.log("Break and Continue Statement");
+
+for (var k=0; k<arr.length; k++){
+    if(k==1){
+        console.log(" continue skips an iteration.");
+        continue;
+    }
+    if(k==3){
+        console.log(" break ends the iteration.");
+        break;
+    }
+    console.log(" ", arr[k]);
+}
+
+//ARRAY METHODS
+console.log("Array Methods: ");
+
+let arr2 = ["water", 23, null, true, "fan"];
+
+console.log(" arr2 = ", arr2);
+console.log(" arr2.length = ",arr2.length);
+
+//pop removes the last element
+arr2.pop();
+console.log(" arr2.pop(4) = ",arr2);
+
+arr2.push("ice");
+console.log(" arr.push('ice') = ",arr2);
+
+//shift removes the first element
+arr2.shift();
+console.log(" arr.shift() = ",arr2);
+
+//unshift returns the array length
+let newLen = arr2.unshift("lol");
+console.log(" newLen = ",newLen);
+console.log(' let newLen = arr2.unshift("lol") = ',arr2);
