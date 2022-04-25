@@ -1,4 +1,4 @@
-# JavaScript
+# [Learning JavaScript](https://im-learning-js.now.sh)
 
 ## 1. Look at the code in editor:
 
