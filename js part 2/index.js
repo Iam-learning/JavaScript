@@ -126,3 +126,18 @@ console.log(" arr.shift() = ",arr2);
 let newLen = arr2.unshift("lol");
 console.log(" newLen = ",newLen);
 console.log(' let newLen = arr2.unshift("lol") = ',arr2);
+
+//string length
+console.log("JavaScript String Methods: ");
+let myString = "learning javascript go go go!";
+console.log(" myString = ", myString);
+console.log(" myString.length = ",myString.length);
+console.log(' myString.indexOf("go") = ',myString.indexOf("go"));
+console.log(' myString.lastIndexOf("go") = ',myString.lastIndexOf("go"));
+
+//DATES
+console.log("Dates: ");
+
+let myDate = new Date();
+console.log(myDate);
+console.log(" myDate.getFullYear = ",myDate.getFullYear());
