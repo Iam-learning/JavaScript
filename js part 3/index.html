@@ -20,6 +20,9 @@
         .text-success{
             color: blueviolet;
         }
+        .text-white{
+            color: white;
+        }
     </style>
         
     <title>JS Part 3</title>
@@ -33,7 +36,29 @@
     <ol start="18">
 
         <li>Dom Manipulation</li>
+        <ul>
+            <li>get elemnts bye clsss, id</li>
+            <li>adding and removing classes</li>
+            <li>innerHTML, innerText</li>
+            <li>get element by tag name</li>
+            <li>append and replcae child elemnt</li>
+            <li>document info</li>
+            <li>selecting classes using name</li>
+            <li>javascript events</li>          
+        </ul>
+        
+        <li>Events</li>
+        <ul>
+            <li>on load</li>
+            <li>click</li>
+            <li>mouseover, mouseout, mouseup, mousedown</li>
+        </ul>
 
+        <li>arrow functions</li>
+        <li>set timeout and interval</li>
+        <li>local storage</li>
+        <li>json</li>
+        <li>template literals</li>
     </ol>
 
     <div class="container">
@@ -47,12 +72,32 @@
     <div class="container">
         <p>Text 3</p>
     </div>
-
+    
     <div class="container">
-        <button id='click'>Click Me</button>
+        <button id='click' onclick="clicked()">Click Me</button>
     </div>
     
-    <br>
+    <div id="Container1">
+        <p>Clickable Text</p>
+    </div>
+
+    <div id="Container2" >
+        <p>Mouse Over Text</p>
+    </div>
+    
+    <div id="Container3" >
+        <p>Click and hold here</p>
+    </div>
+    
+    <hr>
+    
+    <div id="container4" class="container" >
+        <p>I'll click this and the text below will change</p>
+    </div>
+    
+    <div class="container" >
+        <p>This text will change</p>
+    </div>
 
     <button onclick='location.href = "../index.html"'>Back</button>
     
@@ -61,3 +106,4 @@
 
 </body>
 </html>    
+
